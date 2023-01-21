@@ -70,7 +70,9 @@ img {
 .list-portfolio,
 .img-list,
 .list-btn,
-.list-link {
+.list-link,
+.svg-client,
+.svg-footer {
   text-decoration: none;
   list-style: none;
   color: var(--text-color);
@@ -155,6 +157,10 @@ header {
   color: var(--color-blue);
   fill: var(--color-blue);
 }
+.link-contact:hover .svg-info,
+.link-contact:focus .svg-info {
+  fill: var(--color-blue);
+}
 
 /* Sección de titulo */
 
@@ -211,7 +217,8 @@ header {
 }
 
 .icon {
-  margin: 25px 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   fill: var(--color-svg);
 }
 
@@ -295,7 +302,6 @@ header {
   font-weight: 500;
   line-height: 1.18;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .img-list .list-paragraph {
@@ -307,22 +313,44 @@ header {
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .svg-container {
   border-radius: 50%;
   margin-right: 10px;
-  padding: 12px;
   fill: var(--color-social);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.svg-container:hover {
+.svg-container:last-child{
+  margin-right: 0;
+}
+
+.svg-container:hover,
+.svg-container:focus {
   fill: var(--white-color);
   background-color: var(--color-blue);
   cursor: pointer;
+}
+
+.link-svg-team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+  padding: 12px;
+}
+
+.link-svg-team:hover,
+.link-svg-team:focus,
+.link-svg:hover,
+.link-svg:focus{
+  fill: var(--white-color);
+  background: var(--color-blue);
 }
 
 .client {
@@ -333,6 +361,7 @@ header {
 .svg-client-container {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .svg-client {
@@ -352,7 +381,9 @@ header {
 }
 
 .svg-client:hover,
-.icon-client:hover {
+.icon-client:hover,
+.svg-client:focus,
+.icon-client:focus{
   border-color: var(--color-blue);
   fill: var(--color-blue);
 }
@@ -420,8 +451,13 @@ header {
   margin-top: 32px;
 }
 
+.icon-social{
+  fill: var(--white-color);
+}
+
 .container-social-footer {
   display: flex;
+  padding-left: 0;
 }
 
 .tittle-social {
@@ -435,20 +471,26 @@ header {
 
 .svg-footer {
   background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
   border-radius: 50%;
   margin-right: 10px;
   fill: var(--white-color);
+}
+
+.link-svg{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  padding: 12px;
 }
 
 .svg-footer:last-child {
   margin-right: 0;
 }
 
-.svg-footer:hover {
+.svg-footer:hover,
+.svg-footer:focus,
+.link-svg:focus {
   background: var(--color-blue);
   cursor: pointer;
 }
@@ -485,6 +527,7 @@ header {
 .btn:active {
   background-color: var(--color-blue);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* galeria del portafolio */
