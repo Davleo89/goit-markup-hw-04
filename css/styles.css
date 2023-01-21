@@ -212,12 +212,16 @@ header {
 }
 
 .icon-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--color-button-menu);
 }
 
 .icon {
-  margin: 25px 100px;
+  
   fill: var(--color-svg);
 }
 
